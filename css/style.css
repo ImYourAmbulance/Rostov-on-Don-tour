@@ -1,0 +1,44 @@
+body {
+	background-color : #64C7FF;
+	padding: 10px;
+	font-family: verdana;
+	animation-name: mymove;
+	animation-duration: 3s;
+
+}
+
+.titles {
+	animation-name: titles_slide;
+	animation-duration: 1s;
+}
+
+.dino {
+	padding:5px;
+	border-style: solid;
+	transition-duration: 1000ms;
+	transition-property: background;
+	transition-delay: 3ms;
+}
+
+.dino:hover {
+	background-color : #FE9E76;
+	transform: scale(1.1) translate(-0%, -0%);
+}
+
+@keyframes mymove {
+  from { 
+	background-color: #64C7FF
+	   }	
+  to {
+	  background-color: #1771F1;
+	 }
+}
+
+@keyframes titles_slide {
+   from { 
+	visibility: visible
+	}	
+  to {
+	visibility: hidden;
+	}
+}
